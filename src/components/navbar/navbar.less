@@ -1,0 +1,45 @@
+header{
+    height: 64px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.navbar{
+    display: flex;
+    background: #2196f3;
+    background-repeat: repeat;
+    height: inherit;
+    box-shadow: 0 3px .25rem -1px rgba(9,26,47,.28),0 0 0 1px rgba(9,26,47,.05);
+    padding: 0 20px;
+    &__btn{
+        padding: 0 5px;
+        // p{
+        //     position: relative;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%,-50%);
+        // }
+        // Или так
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__menu{
+        position: relative;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+    &__btn a{
+        color: #FFF;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    &__btn a{
+        text-decoration: none;
+    }
+   
+  
+    &__btn:hover{
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+}

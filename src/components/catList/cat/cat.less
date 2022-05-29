@@ -1,0 +1,47 @@
+.cat__card{
+    position: relative;
+    height: 225px;
+    width: 225px;
+    &:hover{
+        
+        box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.18), 0px 6px 5px rgba(0, 0, 0, 0.24) ;
+        .cat__like{
+            background: url('../../../assets/img/favourite_hollow.svg') no-repeat ;
+            background-size: contain;
+        }
+    }
+    .cat__like:hover{
+        background: url('../../../assets/img/favourite_full.svg') no-repeat  ;
+        background-size: contain;
+        cursor: pointer;
+    }
+}
+
+.cat__img{
+    padding: 16px;
+    object-fit: cover;
+    text-align: center;
+    height: 225px;
+    width: 225px;
+    
+}
+.cat__like{
+    z-index: 500;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    bottom: 19px;
+    right: 19px;
+    
+}
+@keyframes press {
+    from{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.5)
+    }
+    to{
+        transform: scale(1)
+    }
+}
