@@ -1,11 +1,14 @@
 {
-  "name": "jp",
+  "name": "kittycat",
   "version": "1.0.0",
   "description": "My pet",
   "main": "index.js",
+  "homepage": "https://riki48.github.io/frontend-challenge/",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack-cli --mode production",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --hot"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --hot",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "author": "An0nymous",
   "license": "ISC",
